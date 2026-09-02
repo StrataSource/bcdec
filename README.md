@@ -7,8 +7,10 @@ This library provides functions to decompress blocks of BC compressed images.
 
 This library does not allocate memory and is trying to use as less stack as possible.
 
-The library was never optimized specifically for speed but for the overall size.  
+This library was never optimized specifically for speed but for the overall size.  
 It has zero external dependencies and is not using any runtime functions.
+
+**This library was writtem by humans and will never contain any LLM-generated code**
 
 ### Supported BC formats:
 - BC1 (also known as DXT1) + it's "binary alpha" variant BC1A (DXT1A)
@@ -52,4 +54,8 @@ Used HDRI image "Lythwood Room" from <https://polyhaven.com/a/lythwood_room> lic
        of reference colors in BC1 color block, that match with
        the floating point interpolation. This also made it faster
        than integer division.
+
+### bugfixes:
+  @linkmauve  
+  @wkjarosz  
 
